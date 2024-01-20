@@ -54,7 +54,8 @@ class TripCreate(TripBase):
 # Properties to return via API
 class Trip(TripBase):
     
-    from_attributes = True
+    class Config:
+        from_attributes = True
         
   
 #Receipts
